@@ -410,14 +410,15 @@ main {
 .alumni-favorites {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 10px;
 	justify-content: flex-start;
-	padding: 2rem;
+	align-items:center;
+	gap:10px;
+	padding:20px 0px 30px 40px;
 }
 
 .alumniDetails{
 	min-height:300px;
-	flex:0 0 32.333%;
+	flex:0 0 31%;
 	display:flex;
 	flex-direction:column;
 	flex-wrap:wrap;
@@ -715,6 +716,7 @@ main {
 	display:flex;
 	flex-wrap:wrap;
 	padding:2rem;
+	gap:20px;
 	justify-content:space-around;
 }
 
@@ -737,19 +739,96 @@ main {
 	flex-direction:column;
 	flex-wrap:wrap;
 	align-items:center;
+	padding:0 0 10px 0;
 	
 }
 
 .community-comment {
-	flex: 1 1 250px;
+	max-width:80%;
 	width: 70%;
 	height:auto;
 	margin-top:10px;
 	border: 1px solid #D3D3D3;
 	border-radius: 12px;
-	padding: 1rem;
+	padding: 20px 20px 20px 20px;
 	transition: 0.3s ease-in-out;
 	Background:white;
+	display:flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+	justify-content:flex-start;
+	gap:20px;
+	font-family:poppins;
+}
+.commentHeader{
+	display:flex;
+	flex-wrap:wrap;
+	padding:0px 5px 0px 5px;
+	justify-content:space-between;
+}
+
+.avatarProfile{
+	display:flex;
+	gap:20px;
+	justify-content:space-between;
+	margin-bottom:10px;
+}
+.avatarLogo{
+	height:40px;
+	width:40px;
+	border-radius:40px;
+	Background:#1e3a8a;
+	color:#ffffff;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.avatarLogoName{
+	font-size:20px;
+}
+
+.avatarInfo{
+	display:flex;
+	flex-direction:column;;
+	justify-content:flex-start;
+	gap:5px;
+}
+
+.avatarName{
+	color:#1f2937;
+	font=size:16px;
+}
+
+.avatarTagline{
+	color:#9ca3af;
+	font-size:13.6px;
+}
+.commentDate{
+	color:#9ca3af;
+}
+
+.commentTitle{
+	color:#1f2937;
+	font-size:20px;
+}
+
+.commentContent{
+	color:#6b7280;
+	font-size:16px;
+}
+
+.commentArchives{
+	display:flex;
+	flex-direction:wrap;
+	flex-wrap:wrap;
+	gap:10px;
+	font-size:16px;
+}
+
+.commentLikes{
+	color:#9ca3af;
+	
 }
 
 .community-comment:hover {
