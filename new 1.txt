@@ -1,0 +1,136 @@
+🔵 Header Section
+Background: #002147 (Navy Blue)
+→ Symbolizes trust, intelligence, and professionalism — perfect for universities
+ and alumni platforms.
+
+Logo Text: #FFFFFF (White)
+→ High contrast for maximum readability.
+
+Navigation Menu Links:
+
+Default: #FFFFFF (White)
+
+Hover/Active: #FFD700 (Gold)
+→ Gold accent gives a premium and elegant feel.
+
+Icons (e.g., hamburger menu, social media):
+
+Color: #FFFFFF or #FFD700 on hover
+
+⚪ Main Body Background
+Background: #F5F5F5 (Light Gray/Off-White)
+→ Soft on the eyes, professional, and neutral to help content stand out.
+
+🔤 Typography (Body Text & Headings)
+Body Text (Paragraphs, Descriptions):
+Color: #333333 (Dark Charcoal)
+→ Excellent readability, not as harsh as black.
+
+Headings (H1, H2, H3, etc.):
+Color: #001B3A (Dark Navy Blue)
+→ Distinct from body text, provides hierarchy and attention.
+
+Links (Inline):
+Default: #002147 (Navy Blue)
+
+Hover: #FFD700 (Gold) with underline
+→ Clearly stands out as interactive without clashing.
+
+🟨 Buttons
+Primary Buttons (e.g., “Register”, “Join”, “Get Involved”):
+Background: #FFD700 (Gold)
+
+Text: #002147 (Navy Blue)
+
+Hover Background: #FFC107 (Slightly darker Gold)
+
+Border Radius: Rounded (8px–12px)
+
+Secondary Buttons (e.g., “Learn More”):
+Background: Transparent or #FFF8E1 (Light Gold Tint)
+
+Text: #002147
+
+Border: 1px solid #FFD700
+
+Hover: Background becomes #FFD700, text turns white
+
+📦 Content Sections (Cards, Quotes, Highlights)
+Card Backgrounds:
+Color: #FFFFFF (White)
+
+Border: 1px solid #E0E0E0
+
+Text: #333333
+
+Title: #001B3A
+
+Call-Out Box / Quote Box:
+Background: #FFF8E1 (Very Light Gold Tint)
+
+Text: #002147
+
+Icon or Quote Symbol: #FFD700
+
+📁 Projects or Events Section
+Card Background: #FFFFFF
+
+Title: #001B3A
+
+Date/Info: #555555
+
+Action Button: Use primary button style
+
+Hover Card Border: 2px solid #FFD700 or subtle shadow
+
+📮 Contact / Form Section
+Form Background: #FFFFFF inside a section of #F5F5F5
+
+Input Fields:
+
+Border: 1px solid #CCCCCC
+
+Text Color: #333333
+
+Placeholder: #888888
+
+Focus Border: #FFD700
+
+Submit Button: Use Primary Button style
+
+⚫ Footer Section
+Background: #333333 (Dark Charcoal)
+
+Text: #F5F5F5 (Off-White)
+
+Links:
+
+Default: #F5F5F5
+
+Hover: #FFD700
+
+Icons (Social Media, etc.):
+
+Default: #F5F5F5
+
+Hover: #FFD700
+
+Copyright
+
+Color: #BBBBBB (Muted Gray)
+
+✅ Accessibility & Contrast Tips
+Ensure contrast ratios meet WCAG AA standards.
+
+Use tools like Color Contrast Checker for validation.
+
+🎨 Summary of Palette
+Color Purpose	Hex	Name
+Primary Blue	#002147	Navy Blue
+Secondary Blue	#001B3A	Dark Navy
+Primary Accent	#FFD700	Gold
+Highlight Tint	#FFF8E1	Light Gold Tint
+Body Background	#F5F5F5	Off-White
+Text	#333333	Charcoal
+Footer Background	#333333	Charcoal
+Footer Text	#F5F5F5	Off-White

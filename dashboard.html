@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width , initial-scale= 0.1'>
+		<title> Veil AI </title>
+		<link rel='stylesheet' type='text/css' href='style.css'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+		<header>
+			<div class="header-logo">
+				<h3>VEIL AI</h3>
+				<p>Alumni Community</p>
+			</div>
+			<section class="header-section">
+				<nav>
+					<a href="#home"><i class="fa-solid fa-house hi"></i>Home</a>
+					<a href="#alumniDirectory"><i class="fa-solid fa-address-book hi"></i>Alumni Directory</a>
+					<a href="#events"><i class="fa-solid fa-calendar-days hi"></i>Events</a>
+					<a href="#announcements"><i class="fa-solid fa-bullhorn hi"></i>Announcements</a>
+					<a href="#community">	<i class="fa-solid fa-people-group hi"></i>Community</a>
+				</nav>
+				<div class="headerProfile"></div>
+			</section>
+		</header>
+		<main>
+			<section id="home" class="home">
+				<div class='mainWelcome'>
+					<p>Welcome , </p> <p class="userName"> Pavan Sai</p>
+				</div>
+				<hr class="section-hr">
+				
+				<div class='mainNotifications'>
+					<div class="mainBox">
+						<h4>Events</h4>
+						<hr>
+						<div class="section-box">
+							<div class="event-count countBox1">
+								<i class="fa-solid fa-calendar-day"></i>
+							</div>
+							
+							<div class="event-count countBox2">
+								2
+							</div>
+						</div>
+					</div>
+					<div class="mainBox">
+						<h4>Announcements</h4>
+						<hr>
+						<div class="section-box">
+							<div class="event-count countBox1">
+								<i class="fa-solid fa-bullhorn"></i>
+							</div>
+							
+							<div class="event-count countBox2">
+								4
+							</div>
+						</div>
+					</div>
+					<div class="mainBox">
+						<h4>Community</h4>
+						<hr>
+						<div class="section-box">
+							<div class="event-count countBox1">
+								<i class="fa-solid fa-people-group"></i>
+							</div>
+							
+							<div class="event-count countBox2">
+								126
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section id="alumniDirectory"class="alumniDirectory">
+				<center>
+					<p class="alumniDirectory-h1">Alumini Directory</p>
+					<h3 class="sideHeading-tagline">Connect with fellow alumni from around the world</h3>
+				</center>
+				<hr class="main-hr">
+				<div class="directoryContent">
+					<div class="searchBar">
+						<input type="text" class="searchBox" placeholder="Search alumni here">
+						<div class="searchIcon" onclick="searchAlumni()">
+							<i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
+						</div>
+					</div>
+					
+					<div class="alumni-favorites">
+						<div class="alumniDetails">
+							<div class="alumniAvatar alumniAll">
+								<p class="alumniAvatarName alumniAll">PS</p>
+							</div>
+							<h3 class="alumniName alumniAll">Pavan Sai</h3>
+							<p class="alumniRole alumniAll">UI Designer</p>
+							<p class="alumniCompany alumniAll">Apple</p>
+							<p class="alumniLocation alumniAll"><i class="fa-solid fa-location-dot"></i> Chennai, In</p>
+							<div class="alumniSkills alumniAll">
+								<span class="alumniSkill">HTML</span>
+								<span class="alumniSkill">CSS</span>
+							</div>
+							<button class="connectBtn">Connect</button>
+						</div>
+						<div class="alumniDetails">
+							<div class="alumniAvatar alumniAll">
+								<p class="alumniAvatarName alumniAll">PS</p>
+							</div>
+							<h3 class="alumniName alumniAll">Pavan Sai</h3>
+							<p class="alumniRole alumniAll">UI Designer</p>
+							<p class="alumniCompany alumniAll">Apple</p>
+							<p class="alumniLocation alumniAll"><i class="fa-solid fa-location-dot"></i> Chennai, In</p>
+							<div class="alumniSkills alumniAll">
+								<span class="alumniSkill">HTML</span>
+								<span class="alumniSkill">CSS</span>
+							</div>
+							<button class="connectBtn">Connect</button>
+						</div>
+						<div class="alumniDetails">
+							<div class="alumniAvatar alumniAll">
+								<p class="alumniAvatarName alumniAll">PS</p>
+							</div>
+							<h3 class="alumniName alumniAll">Pavan Sai</h3>
+							<p class="alumniRole alumniAll">UI Designer</p>
+							<p class="alumniCompany alumniAll">Apple</p>
+							<p class="alumniLocation alumniAll"><i class="fa-solid fa-location-dot"></i> Chennai, In</p>
+							<div class="alumniSkills alumniAll">
+								<span class="alumniSkill">HTML</span>
+								<span class="alumniSkill">CSS</span>
+							</div>
+							<button class="connectBtn">Connect</button>
+						</div>
+						<div class="alumniDetails">
+							<div class="alumniAvatar alumniAll">
+								<p class="alumniAvatarName alumniAll">PS</p>
+							</div>
+							<h3 class="alumniName alumniAll">Pavan Sai</h3>
+							<p class="alumniRole alumniAll">UI Designer</p>
+							<p class="alumniCompany alumniAll">Apple</p>
+							<p class="alumniLocation alumniAll"><i class="fa-solid fa-location-dot"></i> Chennai, In</p>
+							<div class="alumniSkills alumniAll">
+								<span class="alumniSkill">HTML</span>
+								<span class="alumniSkill">CSS</span>
+							</div>
+							<button class="connectBtn">Connect</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="eventSection">
+				<div id="events"class="eventsBlock">
+				<center>
+					<p class="alumniDirectory-h1">Upcoming Events</p>
+					<h3 class="sideHeading-tagline">Join us for networking, learning, and fun activities</h3>
+				</center>
+					<hr class="main-hr">
+					<div class="eventNotifications">
+						<div class="eventsAll">
+							<div class="eventAvatar">
+								<p class="eventLogo"><i class="fa-solid fa-users"></i></p>
+							</div>
+							<div class="eventBlock">
+								<span class="eventDate eventAll">Dec 15,2025</span>
+								<h3 class="eventName eventAll">Annual Alumni Networking Galar</h3>
+								<p class="eventDiscription eventAll">Join us for an evening of networking, celebration, and reconnection with fellow alumni.</p>
+								<div class="eventDetails eventAll">
+									<p class="eventLocation"><i class="fa-solid fa-location-dot logo"></i> Grand Ballroom, Downtown Hotel</p>
+									<span class="eventMemeberCount"><i class="fa-solid fa-users logo"></i> 250 attending</span>
+								</div>
+								<button class="eventRegister">Register Now</button>
+							</div>
+						</div>
+						<div class="eventsAll">
+							<div class="eventAvatar">
+								<p class="eventLogo"><i class="fa-solid fa-users"></i></p>
+							</div>
+							<div class="eventBlock">
+								<span class="eventDate eventAll">Dec 15,2025</span>
+								<h3 class="eventName eventAll">Annual Alumni Networking Galar</h3>
+								<p class="eventDiscription eventAll">Join us for an evening of networking, celebration, and reconnection with fellow alumni.</p>
+								<div class="eventDetails eventAll">
+									<p class="eventLocation"><i class="fa-solid fa-location-dot logo"></i> Grand Ballroom, Downtown Hotel</p>
+									<span class="eventMemeberCount"><i class="fa-solid fa-users logo"></i> 250 attending</span>
+								</div>
+								<button class="eventRegister">Register Now</button>
+							</div>
+						</div>
+						<div class="eventsAll">
+							<div class="eventAvatar">
+								<p class="eventLogo"><i class="fa-solid fa-users"></i></p>
+							</div>
+							<div class="eventBlock">
+								<span class="eventDate eventAll">Dec 15,2025</span>
+								<h3 class="eventName eventAll">Annual Alumni Networking Galar</h3>
+								<p class="eventDiscription eventAll">Join us for an evening of networking, celebration, and reconnection with fellow alumni.</p>
+								<div class="eventDetails eventAll">
+									<p class="eventLocation"><i class="fa-solid fa-location-dot logo"></i> Grand Ballroom, Downtown Hotel</p>
+									<span class="eventMemeberCount"><i class="fa-solid fa-users logo"></i> 250 attending</span>
+								</div>
+								<button class="eventRegister">Register Now</button>
+							</div>
+						</div>
+						<div class="eventsAll">
+							<div class="eventAvatar">
+								<p class="eventLogo"><i class="fa-solid fa-users"></i></p>
+							</div>
+							<div class="eventBlock">
+								<span class="eventDate eventAll">Dec 15,2025</span>
+								<h3 class="eventName eventAll">Annual Alumni Networking Galar</h3>
+								<p class="eventDiscription eventAll">Join us for an evening of networking, celebration, and reconnection with fellow alumni.</p>
+								<div class="eventDetails eventAll">
+									<p class="eventLocation"><i class="fa-solid fa-location-dot logo"></i> Grand Ballroom, Downtown Hotel</p>
+									<span class="eventMemeberCount"><i class="fa-solid fa-users logo"></i> 250 attending</span>
+								</div>
+								<button class="eventRegister">Register Now</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="annSection">
+				<div id="announcements" class="annBlock">
+					<center>
+						<p class="alumniDirectory-h1">Latest Announcements</p>
+						<h3 class="sideHeading-tagline">Stay updated with the latest news and opportunities</h3>
+					</center>
+					<hr class="main-hr">
+					<div class="annNotifications">
+						<div class="an-nots">
+							<div class="ann-not">
+								<span class="annType">NEWS</span>
+								<div class="annInfo">
+									<h3 class="annHeading">New Alumni Scholarship Program Launched</h3>
+									<span class="annDate">November 20, 2025</span>
+								</div>
+								<p class="annDes">We are excited to announce a new scholarship program for current students, funded by our generous alumni community. This initiative will provide financial support to deserving students pursuing excellence in their studies.</p>
+							</div>
+						</div>
+					</div>
+					<div class="annNotifications">
+						<div class="an-nots">
+							<div class="ann-not">
+								<span class="annType">NEWS</span>
+								<div class="annInfo">
+									<h3 class="annHeading">New Alumni Scholarship Program Launched</h3>
+									<span class="annDate">November 20, 2025</span>
+								</div>
+								<p class="annDes">We are excited to announce a new scholarship program for current students, funded by our generous alumni community. This initiative will provide financial support to deserving students pursuing excellence in their studies.</p>
+							</div>
+						</div>
+					</div>
+					<div class="annNotifications">
+						<div class="an-nots">
+							<div class="ann-not">
+								<span class="annType">NEWS</span>
+								<div class="annInfo">
+									<h3 class="annHeading">New Alumni Scholarship Program Launched</h3>
+									<span class="annDate">November 20, 2025</span>
+								</div>
+								<p class="annDes">We are excited to announce a new scholarship program for current students, funded by our generous alumni community. This initiative will provide financial support to deserving students pursuing excellence in their studies.</p>
+							</div>
+						</div>
+					</div>
+					<div class="annNotifications">
+						<div class="an-nots">
+							<div class="ann-not">
+								<span class="annType">NEWS</span>
+								<div class="annInfo">
+									<h3 class="annHeading">New Alumni Scholarship Program Launched</h3>
+									<span class="annDate">November 20, 2025</span>
+								</div>
+								<p class="annDes">We are excited to announce a new scholarship program for current students, funded by our generous alumni community. This initiative will provide financial support to deserving students pursuing excellence in their studies.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="community">
+				<div id="community"class="communityForum">
+				<center>
+					<p class="alumniDirectory-h1">Community Forum</p>
+					<h3 class="sideHeading-tagline">Join the conversation and share your experiences</h3>
+				</center>
+					<hr class="main-hr">
+					<div class="directoryContent">
+						<div class="community-types">
+							<button class="community-button">General Discussion</button>
+							<button class="community-button">Career Advice</button>
+							<button class="community-button">Networking</button>
+							<button class="community-button">Job Opportunities</button>
+						</div>
+						<div class="community-comments">
+							<div class="community-comment"></div>
+							<div class="community-comment"></div>
+							<div class="community-comment"></div>
+							<div class="community-comment"></div>
+							<div class="community-comment"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="footer-logo">
+				<h3 class="footer-h3">VEIL AI</h3>
+				<p class="footer-p1">Alumni Community</p>
+			</div>
+			<div class="footer-copyRight">
+				<p class="footer-p3">
+					<a class="footer-a" href="privacy.html">Privacy</a>
+					<a class="footer-a"href="disclaimer.html">Disclaimer</a>
+					<a class="footer-a" href="security.html">Security Policy</a>
+					<a class="footer-a" href="accessbility.html">Accessibility</a>
+					<a class="footer-a" href="declaration.html">Declaration</a>					  
+				</p>
+				<p class="footer-p2">Veil AI Community 2025  <i class="fa-regular fa-copyright"></i>  </p>
+			</div>
+			<div class="footer-link">
+				<a href="#"><i class="fa-brands fa-instagram"></i></a>
+				<a href="#"><i class="fa-brands fa-facebook"></i></a>
+				<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+				<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+			</div>
+		</footer>
+	</body>
+</html>
