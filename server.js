@@ -2,9 +2,12 @@
 const express = require('express');
 const mysql = require('mysql2');
 const bodyParser = require('body-parser');
-const app = express();
+const bcrypt = require('bcrypt');
+const path=require('path');
 
-app.use(bodyParser.json());
+const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // MySQL Connection
 const db = mysql.createConnection({
@@ -19,43 +22,22 @@ db.connect((err) => {
   console.log("Connected to MySQL!");
 });
 
-// Login Route
-app.post('/login', (req, res) => {
-  const { employee_id, password } = req.body;
+app.use(express.static(path.join(__dirname,'public')));
 
-  const query = 'SELECT * FROM users WHERE employee_id = ? AND password = ?';
-  db.query(query, [employee_id, password], (err, results) => {
-    if (err) return res.status(500).json({ message: "Server error" });
 
-    if (results.length > 0) {
-      res.json({ message: "Login successful" });
-    } else {
-      res.json({ message: "Invalid credentials" });
-    }
-  });
+app.get('/',(req,res)=>{
+	res.sendFile(path.join(__dirname,'public','index.html'));
 });
 
-app.post('/signup', (req, res) => {
-  const { employee_id, password } = req.body;
-
-  // First check if user exists
-  const checkQuery = 'SELECT * FROM users WHERE employee_id = ?';
-  db.query(checkQuery, [employee_id], (err, results) => {
-    if (err) return res.status(500).json({ message: "Server error" });
-
-    if (results.length > 0) {
-      return res.json({ message: "User already exists" });
-    }
-
-    // Insert new user
-    const insertQuery = 'INSERT INTO users (employee_id, password) VALUES (?, ?)';
-    db.query(insertQuery, [employee_id, password], (err, results) => {
-      if (err) return res.status(500).json({ message: "Error creating user" });
-      res.json({ message: "Signup successful" });
-    });
-  });
+app.post('/signup',async(req,res)=>{
+	const{name,loca,email,pass}=req.body;
+	const hashedPass=await bcrypt.hash(pass,10);
+	
+	db.query('insert into users (name,location,email,password) values(?,?,?,?)',
+	[name,loca,email,hashedPass],(err,results)=>{
+		if (err) return res.status(500).send('signup failed');
+		res.send('signup succesful');
+	});
 });
 
-// TODO: Create /signup route
-
-app.listen(3000, () => console.log('Server running on http://localhost:3000'));
+app.listen(3000,()=>console.log("sever running on port 3000"));

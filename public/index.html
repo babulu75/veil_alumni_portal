@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.1">
+		<title>Veil AI</title>
+		<script src="script.js" defer></script>
+		<link rel="stylesheet" type='text/css' href='style.css'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+		<header>
+			<div class="header-logo">
+				<h3>VEIL AI</h3>
+				<p>Alumni Community</p>
+			</div>
+			<div class='header-button'>
+				<button onclick="showModal1()">Sign In</button>
+				<button onclick="showModal2()">Sign Up</button>
+			</div>
+		</header>
+		<main>
+			<div class="img-section">
+				<div class="main-img"></div>
+			</div>
+			<div class="main-content">
+				<h4 class="mainContentH4">"Bridging the Past, Building the Future — Together with Veil AI Alumni .."</h4>
+				
+				<br><hr><br>
+				<div class="mainContentCon">
+					<p class="mainContentP">		Welcome to the Veil AI Alumni Portal — a vibrant community where innovation meets legacy.
+						Stay connected with fellow alumni, share your journey, collaborate on exciting new ideas,
+						and contribute to the growth of future tech leaders.
+						Whether you're a trailblazer in the industry or exploring new frontiers, this platform is 
+						your space to network, mentor, and celebrate achievements.
+
+						Let’s shape the future together, backed by the strength of our shared past.
+					</p>
+					<button onclick="showModal2()">Join Here</button>
+				</div>
+			</div>
+			<div id="overlay" class="overlay"></div>
+			<div id="signin-modal" class="modal">
+				<div class="modal-container">
+					<button onclick="closePopup1()" id="closeBtn">&times;</button>
+					<h2>Sign In</h2>
+					<form action="/signin" method="post" onsubmit="signin(); return false;">
+						<label for='email'>Email</label>
+						<input type='email' id='email' name='email' placeholder='Enter your email'>
+						<label for='password'>Password</label>
+						<input type='password' id='password' name='password' placeholder='Enter your password'>
+						<button type="submit">Sign In</button>
+						<p>Register Here </p><a href="#login">Sign Up</a>
+					</form>
+				</div>
+			</div>
+			<div id="overlay" class="overlay"></div>
+			<div id="signup-modal" class="modal">
+				<div class="modal-container">
+					<button onclick="closePopup2()" id="closeBtn">&times;</button>
+					<h2>Sign Up</h2>
+					<form action="/signup" method="post" onsubmit="signup(); return false;">
+						<label for='name'>Full Name</label>
+						<input type='text' id='name' name='name' placeholder='Enter your name'>
+						<label for='location'>Location</label>
+						<input type='text' id='location' name='location' placeholder='Enter your name'>
+						<label for='email'>Email</label>
+						<input type='email' id='email' name='email' placeholder='Enter your email'>
+						<label for='password'>Password</label>
+						<input type='password' id='password' name='password' placeholder='Enter your password'>
+						<label for='confirm-password'>Confirm Password</label>
+						<input type='password' id='confirm-password' name='confirm-password' placeholder='Confirm your password'>
+						<button type="submit">Sign Up</button>
+						<p>Already registered ? </p><a href="#login">Sign In</a>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="footer-logo">
+				<h3 class="footer-h3">VEIL AI</h3>
+				<p class="footer-p1">Alumni Community</p>
+			</div>
+			<div class="footer-copyRight">
+				<p class="footer-p3">
+					<a class="footer-a" href="privacy.html">Privacy</a>
+					<a class="footer-a"href="disclaimer.html">Disclaimer</a>
+					<a class="footer-a" href="security.html">Security Policy</a>
+					<a class="footer-a" href="accessbility.html">Accessibility</a>
+					<a class="footer-a" href="declaration.html">Declaration</a>					  
+				</p>
+				<p class="footer-p2">Veil AI Community 2025  <i class="fa-regular fa-copyright"></i>  </p>
+			</div>
+			<div class="footer-link">
+				<a href="#"><i class="fa-brands fa-instagram"></i></a>
+				<a href="#"><i class="fa-brands fa-facebook"></i></a>
+				<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+				<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+			</div>
+		</footer>
+		<script>
+			function showModal1() {
+			  document.getElementById("overlay").style.display = "block";
+			  document.getElementById("signin-modal").style.display = "block";
+			}
+
+			function closePopup1() {
+			  document.getElementById("overlay").style.display = "none";
+			  document.getElementById("signin-modal").style.display = "none";
+			}
+			function showModal2() {
+			  document.getElementById("overlay").style.display = "block";
+			  document.getElementById("signup-modal").style.display = "block";
+			}
+
+			function closePopup2() {
+			  document.getElementById("overlay").style.display = "none";
+			  document.getElementById("signup-modal").style.display = "none";
+			}
+		</script>
+	</body>
+</html>
