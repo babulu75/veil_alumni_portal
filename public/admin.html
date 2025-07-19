@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin | Veil AI</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-section {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.admin-section h3 {
+  margin-bottom: 16px;
+  color: #333;
+  font-size: 20px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 8px;
+}
+
+.admin-section label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #444;
+}
+
+.admin-section input[type="text"],
+.admin-section input[type="date"],
+.admin-section textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.admin-section button {
+  margin-top: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-section button:hover {
+  background-color: #0056b3;
+}
+
+.admin-section p {
+  font-size: 16px;
+  margin: 4px 0;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-logo">
+      <h3>VEIL AI</h3>
+      <p>Admin Panel</p>
+    </div>
+  </header>
+
+  <main style="padding: 20px;">
+    <h2 style="text-align:center;">Admin Dashboard - Add Content</h2>
+    <br>
+
+    <!-- 🔢 Stats Section (Static Sample Data) -->
+    <section class="admin-section" style="background-color: #f4f4f4; padding: 20px; border-radius: 8px;">
+      <h3>🔢 Platform Stats</h3>
+      <p>Total Events: <strong id="eventCount">5</strong></p>
+      <p>Total Announcements: <strong id="announcementCount">3</strong></p>
+      <p>Total Community Members: <strong id="userCount">12</strong></p>
+    </section>
+
+    <br><hr><br>
+
+    <!-- 📢 Add Announcement -->
+    <section class="admin-section">
+      <h3>Add Announcement</h3>
+      <form>
+        <label for="announcementTitle">Title</label>
+        <input type="text" id="announcementTitle" name="announcementTitle" placeholder="Enter announcement title" required>
+
+        <label for="announcementDescription">Description</label>
+        <textarea id="announcementDescription" name="announcementDescription" placeholder="Enter announcement details" rows="4" required></textarea>
+
+        <label for="announcementDate">Date</label>
+        <input type="date" id="announcementDate" name="announcementDate" required>
+
+        <button type="button" onclick="alert('This is a static demo. Connect to server to submit.')">Add Announcement</button>
+      </form>
+    </section>
+
+    <br><hr><br>
+
+    <!-- 📅 Add Event -->
+    <section class="admin-section">
+      <h3>Add Event</h3>
+      <form>
+        <label for="eventTitle">Title</label>
+        <input type="text" id="eventTitle" name="eventTitle" placeholder="Enter event title" required>
+
+        <label for="eventDescription">Description</label>
+        <textarea id="eventDescription" name="eventDescription" placeholder="Enter event details" rows="4" required></textarea>
+
+        <label for="eventDate">Date</label>
+        <input type="date" id="eventDate" name="eventDate" required>
+
+        <button type="button" onclick="alert('This is a static demo. Connect to server to submit.')">Add Event</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-logo">
+      <h3 class="footer-h3">VEIL AI</h3>
+      <p class="footer-p1">Alumni Community</p>
+    </div>
+    <div class="footer-copyRight">
+      <p class="footer-p3">
+        <a class="footer-a" href="privacy.html">Privacy</a>
+        <a class="footer-a" href="disclaimer.html">Disclaimer</a>
+        <a class="footer-a" href="security.html">Security Policy</a>
+        <a class="footer-a" href="accessbility.html">Accessibility</a>
+        <a class="footer-a" href="declaration.html">Declaration</a>
+      </p>
+      <p class="footer-p2">Veil AI Community 2025 <i class="fa-regular fa-copyright"></i></p>
+    </div>
+    <div class="footer-link">
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
